@@ -15,9 +15,6 @@
       image: "{{ onlyoffice_image }}"
       state: started
       published_ports: "{{ onlyoffice_ports }}"
-      volumes:
-        - "{{ onlyoffice_logs_directory }}:/var/log/onlyoffice"
-        - "{{ onlyoffice_certificates_directory }}:/var/www/onlyoffice/Data"
       env: "{{ onlyoffice_environment_variables }}"
 
 - name: Create ONLYOFFICE container

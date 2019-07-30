@@ -19,10 +19,6 @@ N/A
 
 `onlyoffice_ports`: List of ports to expose
 
-`onlyoffice_logs_directory`: Directory to store log files
-
-`onlyoffice_certificates_directory`: Directory to cert books
-
 `onlyoffice_environment_variables`: Docker environmental variables
 
 `onlyoffice_docker_additional_options`: [Additional parameters](https://docs.ansible.com/ansible/latest/modules/docker_container_module.html) to add to docker container
