@@ -1,13 +1,5 @@
 ---
 
-- name: Create ONLYOFFICE directories
-  file:
-    path: "{{ item }}"
-    state: directory
-  loop:
-    - "{{ onlyoffice_logs_directory }}"
-    - "{{ onlyoffice_certificates_directory }}"
-
 - name: Set Docker container parameters
   set_fact:
     onlyoffice_container_parameters:
