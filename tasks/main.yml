@@ -23,8 +23,3 @@
 - name: Create ONLYOFFICE container
   docker_container: "{{ onlyoffice_container_parameters | combine(onlyoffice_docker_additional_options) }}"
   register: onlyoffice_container
-
-- name: Wait for ONLYOFFICE start
-  wait_for:
-    port: "{{ onlyoffice_ports[0].split(':')[0] }}"
-    host: "{{ onlyoffice_container.container.NetworkSettings.IPAddress }}"
